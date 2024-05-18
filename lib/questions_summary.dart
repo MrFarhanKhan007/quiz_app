@@ -22,15 +22,20 @@ class QuestionsSummary extends StatelessWidget {
                     Expanded(
                       child: Column(
                         children: [
-                          Text(data["question"] as String),
+                          Text(
+                            data["question"] as String,
+                            textAlign: TextAlign.left,
+                          ),
                           const SizedBox(
                             height: 5,
                           ),
-                          Text(data["correct_answer"] as String),
+                          Text(data["correct_answer"] as String,
+                              textAlign: TextAlign.left),
                           const SizedBox(
                             height: 5,
                           ),
-                          Text(data["user_answer"] as String),
+                          Text(data["user_answer"] as String,
+                              textAlign: TextAlign.left),
                         ],
                       ),
                     )
